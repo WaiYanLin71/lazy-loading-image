@@ -39,7 +39,7 @@
             width: 20%;
         }
 
-        .gap > * {
+        .gap>* {
             padding: 10px;
         }
 
@@ -50,9 +50,19 @@
 
         .skeleton {
             width: 100%;
-            height: 300px;
-            background-color: rgb(174, 146, 110);
-            filter: blur(0.3px);
+            height: 336px;
+            background-color: #413f3f;
+            animation: skeleton-loading 1s infinite alternate;
+        }
+
+        @keyframes skeleton-loading {
+            0% {
+                opacity: 0.8;
+            }
+
+            100% {
+                opacity: 0.3;
+            }
         }
     </style>
 </head>
