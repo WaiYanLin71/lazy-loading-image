@@ -262,7 +262,9 @@
                     const image = entry.target.querySelector('img');
                     image.src = image.dataset.src;
                     image.onload = function () {
-                        entry.target.querySelector('.skeleton').style.display = 'none';
+                        setTimeout(()=>{
+                           entry.target.querySelector('.skeleton').style.display = 'none';
+                        }, 500)
                     };
                     observer.unobserve(entry.target);
                 }
