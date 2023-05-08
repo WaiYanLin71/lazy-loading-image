@@ -1,5 +1,5 @@
 # Lazy Loading Images with Skeleton Placeholder
-
+# [Demo Link](https://waiyanlin71.github.io/lazy-loading-image/)
 Lazy loading is a technique used to defer the loading of images that are initially outside the viewport. This improves the initial page load time and overall performance of your web page. Additionally, by using a skeleton placeholder, you can provide a visual representation of the image's position while it is being loaded.
 
 ## How It Works
