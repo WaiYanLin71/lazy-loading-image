@@ -34,7 +34,7 @@
 
         img {
             width: 100%;
-            /* display: none; */
+            display: none;
         }
 
         .image-container {
@@ -260,10 +260,12 @@
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     const image = entry.target.querySelector('img');
+                    const skeleton = entry.target.querySelector('.skeleton')
                     image.src = image.dataset.src;
                     image.onload = function () {
-                        setTimeout(()=>{
-                           entry.target.querySelector('.skeleton').style.display = 'none';
+                        setTimeout(()=>{  
+                            image.style.display = 'block';
+                            skeleton.style.display = 'none';
                         }, 500)
                     };
                     observer.unobserve(entry.target);
